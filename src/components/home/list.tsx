@@ -3,9 +3,18 @@ import { useGetPlaces } from "../../services/hooks";
 import Error from "../error";
 import Loader from "../loader";
 import Card from "./card";
+import { useSearchParams } from "react-router-dom";
+import type { FilterParams } from "../../types";
 
 const List: FC = () => {
-  const { isLoading, error, data, refetch } = useGetPlaces();
+  //urelden parametreleri aldık
+  const [sp] = useSearchParams();
+
+  const params: FilterParams = Object.fromEntries(sp.entries());
+
+  console.log(params);
+
+  const { isLoading, error, data, refetch } = useGetPlaces(params);
 
   if (isLoading) return <Loader />;
 

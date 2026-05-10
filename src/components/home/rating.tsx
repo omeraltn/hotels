@@ -1,4 +1,3 @@
-import { Rainbow } from "lucide-react";
 import type { FC } from "react";
 
 interface Props {
