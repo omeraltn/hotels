@@ -70,8 +70,8 @@ Uygulama, şu yollarla performansa öncelik verir:
 
 ## Ekran Görüntüsü
 
-#[](./public/screen.jpg)
+![](./public/screen.jpg)
 
 ## Gıf
 
-#[](./public/video.gif)
+![](./public/video.gif)
